@@ -1,0 +1,84 @@
+/* src/components/Contact.css */
+.contact {
+  background-color: var(--white);
+}
+
+.contact-content {
+  display: flex;
+  gap: 50px;
+  margin-top: 50px;
+  align-items: flex-start;
+}
+
+.contact-info, .contact-form {
+  flex: 1;
+}
+
+.contact-info h3, .contact-form h3 {
+  font-size: 1.5rem;
+  color: var(--navy);
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.contact-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 30px;
+}
+
+.contact-icon {
+  width: 50px;
+  height: 50px;
+  background-color: var(--gold);
+  color: var(--white);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+  flex-shrink: 0;
+}
+
+.contact-details h4 {
+  font-size: 1.2rem;
+  color: var(--navy);
+  margin-bottom: 5px;
+}
+
+.contact-details p {
+  color: var(--text-color);
+  margin: 0;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--gold);
+}
+
+@media (max-width: 768px) {
+  .contact-content {
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .contact-info h3, .contact-form h3 {
+    text-align: center;
+  }
+}

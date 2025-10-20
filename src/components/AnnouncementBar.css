@@ -1,0 +1,233 @@
+/* src/components/AnnouncementBar.css */
+.announcement-bar {
+  background: var(--navy);
+  color: var(--white);
+  padding: 0;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 32px;
+  width: 100%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: 0.75rem;
+  z-index: 1002;
+  display: flex;
+  align-items: center;
+  transition: transform 0.3s ease-in-out;
+  font-family: Arial, sans-serif;
+}
+
+.announcement-bar.visible {
+  transform: translateY(0);
+}
+
+.announcement-bar.hidden {
+  transform: translateY(-100%);
+}
+
+.announcement-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.scrolling-content {
+  display: flex;
+  align-items: center;
+  animation: scroll-left 25s linear infinite;
+  white-space: nowrap;
+  padding: 0;
+  height: 100%;
+  line-height: 32px;
+}
+
+.scrolling-content:hover {
+  animation-play-state: paused;
+}
+
+.announcement-item {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  transition: all 0.2s ease;
+  height: 100%;
+  padding: 0 8px;
+  cursor: pointer;
+  line-height: inherit;
+  color: var(--white);
+  text-decoration: none;
+  font-weight: 400;
+}
+
+.announcement-item:hover {
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+.announcement-item i {
+  color: var(--gold);
+  margin-right: 6px;
+  font-size: 0.7rem;
+  width: 12px;
+  text-align: center;
+  flex-shrink: 0;
+  line-height: inherit;
+}
+
+.announcement-item span {
+  color: var(--white);
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: inherit;
+  white-space: nowrap;
+  letter-spacing: 0.2px;
+}
+
+.divider {
+  margin-left: 12px;
+  color: rgba(255, 255, 255, 0.4);
+  font-weight: 300;
+  font-size: 0.8rem;
+  line-height: inherit;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Pause animation when reduced motion is preferred */
+@media (prefers-reduced-motion: reduce) {
+  .scrolling-content {
+    animation: none;
+    justify-content: center;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .announcement-bar {
+    height: 30px;
+    font-size: 0.7rem;
+  }
+  
+  .scrolling-content {
+    animation-duration: 20s;
+    line-height: 30px;
+  }
+  
+  .announcement-item {
+    padding: 0 6px;
+  }
+  
+  .announcement-item i {
+    font-size: 0.65rem;
+    margin-right: 5px;
+  }
+  
+  .announcement-item span {
+    font-size: 0.7rem;
+  }
+  
+  .divider {
+    margin-left: 10px;
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .announcement-bar {
+    height: 28px;
+  }
+  
+  .scrolling-content {
+    line-height: 28px;
+    animation-duration: 18s;
+  }
+  
+  .announcement-item {
+    padding: 0 4px;
+  }
+  
+  .announcement-item i {
+    font-size: 0.6rem;
+    margin-right: 4px;
+  }
+  
+  .announcement-item span {
+    font-size: 0.65rem;
+  }
+  
+  .divider {
+    margin-left: 8px;
+    font-size: 0.7rem;
+  }
+}
+
+/* Hide on very small screens */
+@media (max-width: 360px) {
+  .announcement-bar {
+    display: none;
+  }
+}
+
+/* Ensure text doesn't overflow */
+.announcement-item span {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 160px;
+}
+
+@media (max-width: 768px) {
+  .announcement-item span {
+    max-width: 130px;
+  }
+}
+
+@media (max-width: 600px) {
+  .announcement-item span {
+    max-width: 110px;
+  }
+}
+
+@media (max-width: 480px) {
+  .announcement-item span {
+    max-width: 90px;
+  }
+}
+
+/* Compact styling for the image reference style */
+.announcement-bar {
+  background: #0a1a35; /* Solid navy background */
+  border-bottom: 1px solid #1a2d4d;
+}
+
+.announcement-item {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.announcement-item:hover span {
+  color: var(--gold);
+}
+
+/* Social media icons styling */
+.announcement-item .fab {
+  color: var(--gold);
+}
+
+/* Ensure all items stay in one line */
+.scrolling-content {
+  flex-wrap: nowrap;
+}
+
+.announcement-item {
+  white-space: nowrap;
+}
