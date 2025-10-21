@@ -16,10 +16,10 @@ const About = () => {
           <div className="about-text">
             <h3>Our Story</h3>
             <p>
-              Ellece Gaborapelwe Legal Practice is dedicated to providing
-              exceptional legal services with a focus on client-centered
-              solutions. Our firm combines traditional values with modern
-              approaches to deliver effective legal representation.
+              Mokopakgosi Attorneys is dedicated to providing exceptional legal
+              services with a focus on client-centered solutions. Our firm
+              combines traditional values with modern approaches to deliver
+              effective legal representation.
             </p>
 
             <h3>Our Vision</h3>
@@ -41,7 +41,7 @@ const About = () => {
           <div className="about-image">
             <img
               src="/images/team.jpg"
-              alt="Ellece Gaborapelwe Legal Practice - Professional Law Office"
+              alt="Mokopakgosi Attorneys - Professional Law Office"
               className="about-img"
             />
             <div className="image-overlay">

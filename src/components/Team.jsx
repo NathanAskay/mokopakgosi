@@ -5,15 +5,16 @@ import "./Team.css";
 const Team = () => {
   const teamMembers = [
     {
-      name: "Ellece Gaborapelwe",
+      name: "Mr Mokopakgosi",
       position: "Principal Attorney",
-      email: "ellece@eglegalpractice.co.bw",
-      image: "/images/lawyer.jpg",
+      email: "admin@mokopakgosiattorneys.co.bw",
+      image:
+        "https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80",
     },
     {
       name: "John Carr-Hartley",
       position: "Managing Partner",
-      email: "john@eglegalpractice.co.bw",
+      email: "john@mokopakgosiattorneys.co.bw",
       image:
         "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
     },
@@ -21,7 +22,7 @@ const Team = () => {
     {
       name: "Moemedi Tafa",
       position: "Partner",
-      email: "moemedi@eglegalpractice.co.bw",
+      email: "moemedi@@mokopakgosiattorneys.co.bw",
       image:
         "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80",
     },

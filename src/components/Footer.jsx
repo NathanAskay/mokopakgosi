@@ -11,10 +11,10 @@ const Footer = () => {
         <div className="footer-content">
           <div className="footer-section">
             <div className="footer-logo">
-              <span>EG</span>
+              <span>M</span>
               <div className="footer-logo-text">
-                <h3>Ellece Gaborapelwe</h3>
-                <p>Legal Practice</p>
+                <h3>Mokopakgosi Attorneys</h3>
+                <p>Attorneys, Notaries & Conveyancers</p>
               </div>
             </div>
             <p className="footer-description">
@@ -71,8 +71,7 @@ const Footer = () => {
 
         <div className="footer-bottom">
           <p>
-            &copy; {currentYear} Ellece Gaborapelwe Legal Practice. All rights
-            reserved.
+            &copy; {currentYear} Mokopakgosi Attorneys. All rights reserved.
           </p>
           <p>Professional Legal Services in Botswana</p>
         </div>

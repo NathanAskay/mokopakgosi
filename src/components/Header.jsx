@@ -36,10 +36,10 @@ const Header = () => {
       <div className="container">
         <div className="header-content">
           <div className="logo">
-            <span>EG</span>
+            <span>M</span>
             <div className="logo-text">
-              <h1>Ellece Gaborapelwe</h1>
-              <p>Legal Practice</p>
+              <h1>Mokopakgosi Attorneys</h1>
+              <p>Attorneys, Notaries & Conveyancers</p>
             </div>
           </div>
 

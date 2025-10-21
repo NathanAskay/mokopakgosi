@@ -9,21 +9,21 @@ const AnnouncementBar = () => {
   const allItems = [
     {
       type: "email",
-      content: "info@eglegalpractice.co.bw",
+      content: "admin@mokopakgosiattorneys.co.bw",
       icon: "fas fa-envelope",
-      link: "mailto:info@eglegalpractice.co.bw",
+      link: "mailto:admin@mokopakgosiattorneys.co.bw",
     },
     {
       type: "phone",
-      content: "+267 311 0041",
+      content: "+26772723359",
       icon: "fas fa-phone",
-      link: "tel:+2673110041",
+      link: "tel:+26772723359",
     },
     {
       type: "phone",
-      content: "+267 78 552 116",
+      content: "+267 3960700",
       icon: "fas fa-mobile-alt",
-      link: "tel:+26778552116",
+      link: "tel:+2673960700",
     },
     {
       type: "social",

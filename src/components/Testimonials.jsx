@@ -6,19 +6,19 @@ const Testimonials = () => {
   const testimonials = [
     {
       quote:
-        "May I also take this opportunity to express our sincere gratitude to Ellece Gaborapelwe for representing our organization and always giving us untiring legal guidance and support. We really appreciated that. Thank you.",
+        "May I also take this opportunity to express our sincere gratitude to Mokopakgosi Attorneys for representing our organization and always giving us untiring legal guidance and support. We really appreciated that. Thank you.",
       author: "Nthabiseng Liphapang",
       position: "Legal Counsel, SADC Secretariat",
     },
     {
       quote:
-        "Working with Ellece Gaborapelwe has been an absolute pleasure. Her professionalism, depth of legal knowledge, and dedication to client success make her an invaluable partner. She always goes above and beyond expectations.",
+        "Working with Mokopakgosi Attorneys has been an absolute pleasure. Their professionalism, depth of legal knowledge, and dedication to client success make them an invaluable partner. They always go above and beyond expectations.",
       author: "Kabelo Motsamai",
       position: "Managing Director, Motsamai Holdings",
     },
     {
       quote:
-        "Ellece’s strategic thinking and clear communication have been instrumental in resolving complex legal matters for our firm. Her attention to detail and commitment to excellence set her apart in the legal field.",
+        "Mokopakgosi Attorneys’ strategic thinking and clear communication have been instrumental in resolving complex legal matters for our firm. Their attention to detail and commitment to excellence set them apart in the legal field.",
       author: "Boitumelo Ncube",
       position: "Chief Operations Officer, Delta Projects Botswana",
     },

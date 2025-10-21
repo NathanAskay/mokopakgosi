@@ -8,10 +8,9 @@ const Hero = () => {
   const slides = [
     {
       type: "welcome",
-      title: "Ellece Gaborapelwe",
-      subtitle: "Legal Practice",
-      description:
-        "Professional Legal Excellence with Integrity and Dedication",
+      title: "Mokopakgosi Attorneys",
+      subtitle: "Attorneys, Notaries & Conveyancers",
+      description: "We deliver innovative and practical legal solutions",
       background:
         "linear-gradient(rgba(10, 26, 53, 0.8), rgba(10, 26, 53, 0.9))",
       backgroundImage: "/images/background.jpg",
