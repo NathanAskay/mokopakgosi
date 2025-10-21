@@ -11,37 +11,37 @@ const Clients = () => {
     },
     {
       name: "Splunk",
-      logo: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=200&h=100&fit=crop&crop=center",
+      logo: "/images/africa.png",
       description: "a cisco company",
     },
     {
       name: "archGuard",
-      logo: "https://images.unsplash.com/photo-1556655852-ef0698e516c7?w=200&h=100&fit=crop&crop=center",
+      logo: "/images/edtech.jpg",
       description: "",
     },
     {
       name: "Fortinet",
-      logo: "https://images.unsplash.com/photo-1563206767-5b18f218e8de?w=200&h=100&fit=crop&crop=center",
+      logo: "/images/bih.jpg",
       description: "",
     },
     {
       name: "SimpleRisk",
-      logo: "https://images.unsplash.com/photo-1565688534245-05d6b5be184a?w=200&h=100&fit=crop&crop=center",
+      logo: "/images/msc.png",
       description: "SIMPLE DIFFERENT APPROACH",
     },
     {
       name: "Microsoft",
-      logo: "https://images.unsplash.com/photo-1633419461181-2ee8d0ac59c4?w=200&h=100&fit=crop&crop=center",
+      logo: "/images/khaya.png",
       description: "",
     },
     {
       name: "IBM",
-      logo: "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=200&h=100&fit=crop&crop=center",
+      logo: "/images/logo.jpg",
       description: "",
     },
     {
       name: "Oracle",
-      logo: "https://images.unsplash.com/photo-1547658719-da2b51169166?w=200&h=100&fit=crop&crop=center",
+      logo: "/images/dent.png",
       description: "",
     },
   ];
