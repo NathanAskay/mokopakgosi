@@ -1,0 +1,256 @@
+/* src/components/Clients.css */
+.clients {
+  background: linear-gradient(135deg, var(--navy) 0%, #1a2d4d 100%);
+  color: var(--white);
+  padding: 80px 0;
+  overflow: hidden;
+}
+
+.clients .section-title {
+  color: var(--white);
+  margin-bottom: 50px;
+}
+
+.clients .section-title::after {
+  background-color: var(--gold);
+}
+
+.clients-showcase {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding: 30px 0;
+}
+
+.clients-track {
+  display: flex;
+  animation: scroll-left 30s linear infinite;
+  gap: 50px;
+  padding: 0 20px;
+  align-items: center;
+}
+
+.clients-track:hover {
+  animation-play-state: paused;
+}
+
+.client-card {
+  flex: 0 0 auto;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 25px 30px;
+  text-align: center;
+  min-width: 200px;
+  height: 140px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.client-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, var(--gold), var(--light-gold));
+}
+
+.client-card:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.client-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8px;
+  height: 60px;
+}
+
+.client-logo-img {
+  max-width: 120px;
+  max-height: 50px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  filter: brightness(0) invert(1); /* Makes logos white */
+  transition: all 0.3s ease;
+}
+
+.client-card:hover .client-logo-img {
+  filter: brightness(0) invert(0.8) sepia(1) saturate(5) hue-rotate(5deg); /* Gold color on hover */
+}
+
+.client-description {
+  font-size: 0.8rem;
+  color: var(--gold);
+  font-weight: 500;
+  margin: 5px 0 0 0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-style: italic;
+  line-height: 1.2;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-200px * 8 - 50px * 8)); /* card width * number of clients + gap * number of clients */
+  }
+}
+
+/* Pause animation when reduced motion is preferred */
+@media (prefers-reduced-motion: reduce) {
+  .clients-track {
+    animation: none;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .client-card {
+    min-width: 180px;
+    margin: 10px;
+    height: 130px;
+  }
+}
+
+/* Gradient overlay for fading edges */
+.clients-showcase::before,
+.clients-showcase::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100px;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.clients-showcase::before {
+  left: 0;
+  background: linear-gradient(90deg, var(--navy) 0%, transparent 100%);
+}
+
+.clients-showcase::after {
+  right: 0;
+  background: linear-gradient(270deg, var(--navy) 0%, transparent 100%);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .clients {
+    padding: 60px 0;
+  }
+  
+  .clients-track {
+    gap: 30px;
+    animation-duration: 25s;
+  }
+  
+  .client-card {
+    min-width: 160px;
+    padding: 20px 25px;
+    height: 120px;
+  }
+  
+  .client-logo-img {
+    max-width: 100px;
+    max-height: 40px;
+  }
+  
+  .client-description {
+    font-size: 0.75rem;
+  }
+  
+  .clients-showcase::before,
+  .clients-showcase::after {
+    width: 60px;
+  }
+}
+
+@media (max-width: 480px) {
+  .clients {
+    padding: 50px 0;
+  }
+  
+  .clients-track {
+    gap: 20px;
+    animation-duration: 20s;
+  }
+  
+  .client-card {
+    min-width: 140px;
+    padding: 15px 20px;
+    height: 110px;
+  }
+  
+  .client-logo-img {
+    max-width: 80px;
+    max-height: 35px;
+  }
+  
+  .client-description {
+    font-size: 0.7rem;
+  }
+  
+  .clients-showcase::before,
+  .clients-showcase::after {
+    width: 40px;
+  }
+}
+
+/* Alternative layout for very small screens */
+@media (max-width: 360px) {
+  .clients-track {
+    animation: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .client-card {
+    min-width: 120px;
+    padding: 12px 15px;
+    height: 100px;
+    margin: 5px;
+  }
+  
+  .client-logo-img {
+    max-width: 70px;
+    max-height: 30px;
+  }
+}
+
+/* Loading state for images */
+.client-logo-img {
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: loading 1.5s infinite;
+}
+
+@keyframes loading {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+.client-logo-img[src] {
+  background: none;
+  animation: none;
+}

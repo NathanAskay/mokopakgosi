@@ -11,6 +11,7 @@ import Testimonials from "./components/Testimonials";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import WhatsAppFloat from "./components/WhatsAppFloat";
+import Clients from "./components/Clients";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
       <Services />
       <Team />
       <Testimonials />
+      <Clients />
       <Contact />
       <Footer />
       <WhatsAppFloat />
